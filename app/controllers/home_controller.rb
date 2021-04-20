@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-      @bookmarks = Bookmark.group(:kind).count
+      @bookmarks = Bookmark.joins(:kind).group('kinds.name').count
   end
 end
