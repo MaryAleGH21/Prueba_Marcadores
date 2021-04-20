@@ -12,27 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <strong><%= form.label :title %></strong>
+    <br>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :url %>
+    <strong><%= form.label :url %></strong>
+    <br>
     <%= form.text_field :url %>
   </div>
 
 
  <div class="field">
-    <%= form.label :category_id %>
-    <%= form.text_field :category_id %>
+    <strong><%= form.label :category_id %></strong>
+    <br>
+    <%= form.select :category_id, Category.pluck(:name, :id)%> 
   </div> 
 
   <div class="field">
-    <%= form.label :kind_id %>
-    <%= form.text_field :kind_id %>
+    <strong><%= form.label :kind_id %></strong>
+    <br>
+    <%= form.select :kind_id, Kind.pluck(:name, :id)%>
   </div>
 
-  <div class="actions">
+  <div class="actions btn btn-warning">
     <%= form.submit data: {confirm: 'Do you want to create this bookmark?' } %>
   </div>
 <% end %>
