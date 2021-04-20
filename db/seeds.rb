@@ -10,8 +10,8 @@ Bookmark.destroy_all
 Kind.destroy_all
 Category.destroy_all
 
-tip1= Kind.create(name:"Finalizado")
-tip2= Kind.create(name:"En emision")
+tip1= Kind.create(name:"Fábula")
+tip2= Kind.create(name:"Serie")
 tip3= Kind.create(name:"Pelicula")
 
 cat1= Category.create(name:"Shounen", is_public: false)
@@ -53,15 +53,15 @@ cat33= Category.create(name:"Escolar", category_id:cat3, is_public: false)
 Bookmark.create(
     [
         {title: "Dr. Stone", url: "https://www3.animeflv.net/anime/dr-stone", kind_id: tip1.id, category_id: cat10.id},
-        {title: "Horimiya", url: "https://www3.animeflv.net/anime/horimiya", kind_id: tip2.id, category_id: cat7.id}, 
+        {title: "The Wire", url: "https://www3.animeflv.net/anime/TheWire", kind_id: tip2.id, category_id: cat7.id}, 
         {title: "Kimetsu no Yaiba", url: "https://www3.animeflv.net/anime/kimetsu-no-yaiba", kind_id: tip1.id, category_id: cat12.id},
         {title: "Kuroshitsuji", url: "https://www3.animeflv.net/anime/kuroshitsuji", kind_id: tip1.id, category_id: cat11.id},
         {title: "Jujutsu kaisen", url: "https://www3.animeflv.net/anime/jujutsu-kaisen-tv", kind_id: tip2.id, category_id: cat12.id},
-        {title: "Koe no Katachi", url:"https://www3.animeflv.net/anime/koe-no-katachi", kind_id: tip3.id, category_id: cat13.id},
+        {title: "Pulp Fiction", url:"https://www.20minutos.es/cine/cartelera/pelicula/1691/pulp-fiction/", kind_id: tip3.id, category_id: cat13.id},
         {title: "Non Non Biyori Movie:Vacation", url: "https://www3.animeflv.net/anime/non-non-biyori-movie-vacation", kind_id: tip3.id, category_id: cat18.id},
-        {title:"Shin Gekijouban Initial D:Legend 3 - Mugen", url:"https://www3.animeflv.net/anime/shin-gekijouban-initial-d-legend-3-mugen", kind_id: tip3.id, category_id:  cat16.id},
+        {title:"La lista de Schindler", url:"https://www.20minutos.es/cine/cartelera/pelicula/2098/la-lista-de-schindler/", kind_id: tip3.id, category_id:  cat16.id},
         {title:"Mushishi Zoku Shou: Suzu no Shizuku", url: "https://www3.animeflv.net/anime/mushishi-zoku-shou-suzu-no-shizuku", kind_id: tip3.id, category_id: cat22.id},
-        {title:"Persona 3 The Movie", url:"https://www3.animeflv.net/anime/persona-3", kind_id: tip3.id, category_id:  cat21.id},
+        {title:"La Mirada de Ulises", url:"https://www.20minutos.es/cine/cartelera/pelicula/11480/la-mirada-de-ulises/", kind_id: tip3.id, category_id:  cat21.id},
         {title:"Watashi ga Motete Dousunda", url:"https://www3.animeflv.net/anime/watashi-ga-motete-dousunda", kind_id: tip1.id, category_id: cat28.id},
         {title:"Meiji Tokyo Renka", url:"https://www3.animeflv.net/anime/meiji-tokyo-renka", kind_id: tip1.id, category_id: cat31.id},
         {title:"Cardcaptor Sakura: Clear Card-hen", url:"https://www3.animeflv.net/anime/cardcaptor-sakura-clear-cardhen", kind_id: tip2.id, category_id:  cat33.id},
