@@ -28,6 +28,7 @@ cat10= Category.create(name:"Aventura", category_id:cat1, is_public: false)
 cat11= Category.create(name:"Fantasia", category_id:cat1, is_public: false)
 cat12= Category.create(name:"Sobrenatural", category_id:cat1, is_public: false)
 cat13= Category.create(name:"Escolar", category_id:cat1, is_public: false)
+
 cat14= Category.create(name:"Accion", category_id:cat2, is_public: false)
 cat15= Category.create(name:"Ciencia ficcion", category_id:cat2, is_public: false)
 cat16= Category.create(name:"Deportes", category_id:cat2, is_public: false)
