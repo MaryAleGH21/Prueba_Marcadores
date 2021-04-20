@@ -36,7 +36,9 @@
     <%= form.select :kind_id, Kind.pluck(:name, :id)%>
   </div>
 
-  <div class="actions btn btn-warning">
+<br>
+  <div class="actions">
     <%= form.submit data: {confirm: 'Do you want to create this bookmark?' } %>
   </div>
 <% end %>
+<br>
